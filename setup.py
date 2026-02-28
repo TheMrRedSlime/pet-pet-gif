@@ -7,22 +7,21 @@ def read(fname):
 
 
 setup(
-    name='pet-pet-gif',
-    version='1.0.2',
-    packages=['petpetgif'],
-    keywords=['petpet', 'petthe', 'gif'],
-    url='https://github.com/camprevail/pet-pet-gif',
+    name='pet-pet-gif-fix',
+    version='1.0.3',
+    packages=['petpetgif_fix'],
+    keywords=['petpet', 'petthe', 'gif', "fix", "petpetgif-fix", "petpetgif_fix", "patch"],
+    url='https://github.com/TheMrRedSlime/pet-pet-gif',
     license='MIT',
-    author='camprevail',
+    author='TheMrRedSlime',
     author_email='cam.anderson573@gmail.com',
     description='Generate a petting gif from a static image (known as "petpet", "Pet the X", or "PETTHE").',
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     install_requires=["pillow", "setuptools"],
-    package_data={"petpetgif": ["img/*"]}
+    package_data={"petpetgif_fix": ["img/*"]}
 )

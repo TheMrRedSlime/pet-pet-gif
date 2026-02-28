@@ -1,6 +1,6 @@
 from PIL import Image
-from petpetgif.saveGif import save_transparent_gif
-from pkg_resources import resource_stream
+from petpetgif_fix.saveGif import save_transparent_gif
+from importlib.resources import files
 
 frames = 10
 resolution = (128, 128)
@@ -27,7 +27,7 @@ def make(source, dest):
 
         canvas = Image.new('RGBA', size=resolution, color=(0, 0, 0, 0))
         canvas.paste(base.resize((round(width * resolution[0]), round(height * resolution[1]))), (round(offsetX * resolution[0]), round(offsetY * resolution[1])))
-        pet = Image.open(resource_stream(__name__, f"img/pet{i}.gif")).convert('RGBA').resize(resolution)
+        pet = Image.open(files("petpetgif_fix").joinpath("img", f"pet{i}.gif").open("rb")).convert('RGBA').resize(resolution)
         canvas.paste(pet, mask=pet)
         images.append(canvas)
 

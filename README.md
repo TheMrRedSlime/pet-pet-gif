@@ -7,6 +7,11 @@ Python adaptation of https://github.com/aDu/pet-pet-gif
 
 
 ### Usage:
+
+I had some Issues with Pet-pet with pkg_resources on termux
+It didnt fix itself so im using the modern method now. technically old
+cause i wanted it to be backwards compatible
+
 ```py
 from petpetgif import petpet  
 petpet.make(source, dest)
