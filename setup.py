@@ -14,7 +14,7 @@ setup(
     url='https://github.com/TheMrRedSlime/pet-pet-gif',
     license='MIT',
     author='TheMrRedSlime',
-    author_email='cam.anderson573@gmail.com',
+    author_email='69750444+TheMrRedSlime@users.noreply.github.com',
     description='Generate a petting gif from a static image (known as "petpet", "Pet the X", or "PETTHE").',
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
