@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='pet-pet-gif-fix',
-    version='1.0.3',
+    version='1.0.4',
     packages=['petpetgif_fix'],
     keywords=['petpet', 'petthe', 'gif', "fix", "petpetgif-fix", "petpetgif_fix", "patch"],
     url='https://github.com/TheMrRedSlime/pet-pet-gif',
